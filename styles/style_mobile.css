@@ -1,0 +1,619 @@
+/* phone viewport */
+
+/* DPI 150% (1280x720) */
+@media screen and (max-width: 1280px) {
+
+    header {
+        padding: 1vh 5vw;
+    }
+
+    #viewport {
+        padding: 1em 7vw;
+    }
+}
+
+/* Resolution 4:3 1366x1024 (iPad Pro Landscape) */
+
+@media screen and (max-width:1366px) {
+    #viewport {
+        padding: 1em 6vw;
+    }
+}
+
+/* Resolution 4:3 1024x1366 (iPad Pro Portrait & iPad Air Landscape) */
+
+@media screen and (min-width:1024px) and (max-width:1366px) {
+    #viewport {
+        padding: 1em 7vw;
+    }
+
+    .headline {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        padding-top: 3vh;
+    }
+
+    .headlineleft {
+        align-items: center;
+    }
+
+    .headlineright {
+        justify-content: center;
+    }
+
+    .headlinerightalbum {
+        padding: 2vh 0 5vh 0;
+    }
+
+    .mobileonly {
+        display: inherit;
+    }
+}
+
+
+/* Mobile Phone Layout */
+
+@media screen and (max-width: 926px) {
+
+    * {
+        margin-right: 0;
+        margin-left: 0;
+        -webkit-user-select: none;
+    }
+
+    body {
+        font-family: 'Poppins', SF Pro Text, Arial, Helvetica, PingFang SC, sans-serif;
+        padding: 50px 0 0 0;
+        margin: 0;
+        max-width: 100%;
+        overflow-x: hidden;
+        -webkit-user-select: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    h1 {
+        font-weight: bolder;
+    }
+
+    h2 {
+        margin-block-start: 10px;
+        margin-block-end: -10px;
+        line-height: 120%;
+    }
+
+    ul {
+        list-style: none;
+        padding-inline-start: 0px;
+    }
+
+    p {
+        color: #838383;
+    }
+
+    /* except profile logo */
+    header {
+        line-height: 60%;
+        padding: 2em 5vw 0em 5vw;
+        opacity: 1;
+        /* display: flex;
+        flex-direction: row;
+        justify-content: space-between; */
+    }
+
+    header .profile {
+        position: fixed;
+        top: 20px;
+        z-index: 1000000;
+    }
+
+    /* except header */
+    section {
+        margin: 0;
+        padding: 5vh 0vw;
+    }
+
+    section h1 {
+        font-size: 10em;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+
+    section h3 {
+        text-transform: uppercase;
+    }
+
+    section span {
+        border-radius: 100px;
+        background: #f5f5f527;
+        padding: 4px 10px;
+        position: relative;
+        font-weight: lighter;
+        /* ie6 border fix*/
+    }
+
+    section>h1,
+    h2,
+    h4,
+    h5,
+    span,
+    p {
+        padding: 0 5vw;
+    }
+
+    button {
+        padding: 10px 60px;
+        background: linear-gradient(to bottom, #548aff, #2f71ff);
+        border: 0px;
+        border-radius: 5px;
+        font-family: inherit;
+        transition: 0.1s;
+        margin-bottom: 20px;
+    }
+
+    button h3,p {
+        color: inherit;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    /* class */
+
+    .responsivemenu {
+        /* display: none; */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .headline {
+        margin: 2vh 0 2vh 0;
+        border: 0px black solid;
+        height: min-content;
+    }
+
+    .headlineleft {
+        display: block;
+    }
+
+    .headlineright {
+        height: 100%;
+        white-space: nowrap;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        padding-left: 5vw;
+        -webkit-overflow-scrolling: touch;
+        -webkit-mask-image: linear-gradient(90deg, #000 80%, transparent);
+    }
+
+    .headlineright img {
+        display: inline;
+        width: 200px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .headlinerightalbum {
+        height: 100%;
+        white-space: nowrap;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        padding-left: 5vw;
+        -webkit-overflow-scrolling: touch;
+        -webkit-mask-image: linear-gradient(90deg, #000 80%, transparent);
+    }
+
+    .headlinerightalbum img {
+        width: 300px;
+        display: inline;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 0 0 0 5vw;
+        border-radius: 13px;
+    }
+
+    .horizontalul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .motiongraphics1 {
+        background-image: url("../img/motiongraphics/quitphubbing.jpg");
+        margin-bottom: 1vh;
+    }
+
+    .motiongraphics2 {
+        background-image: url("../img/motiongraphics/zone.png");
+    }
+
+    .motiongraphics3 {
+        background-image: url("../img/motiongraphics/dottept1.jpg");
+        margin-top: 1vh;
+    }
+
+    .horizontaldiv {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 5vh;
+        width: 100%;
+    }
+
+    .youtubestylelist {
+        display: grid;
+        gap: 7vh;
+    }
+
+    .youtubestylecell {
+        display: grid;
+        gap: 2vh;
+        border-bottom: 1px solid rgb(219, 219, 219);
+    }
+
+    .youtubestylecell img {
+        width: 100%;
+    }
+
+    .landscapepicture {
+        width: 100%;
+        height: 30vh;
+        background-image: url("../img/about/profile_1.jpg");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+    }
+
+    .detailheaderleft {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detailvideomobile {
+        display: block;
+        width: 100%;
+    }
+
+    .splash {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(255, 255, 255, 0.519);
+        font-size: 2em;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        animation-name: open;
+        animation-duration: 1s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+        z-index: 10000000000000000;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        /* background-image: url("../img/splash/daienlyusplash.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; */
+    }
+
+    .splash img {
+        max-width: 3em;
+        display: block;
+        animation-name: ascending;
+        animation-duration: 1s;
+        animation-timing-function:cubic-bezier(0.77, 0, 0.175, 1);
+        animation-fill-mode: forwards;
+    }
+
+    .splash h1 {
+        display: block;
+        animation: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+
+    @keyframes open {
+        0% {
+            transform: translate(0, 0);
+        }
+
+        100% {
+            transform: scale(0);
+            opacity: 0;
+        }
+    }
+
+    @keyframes ascending {
+        0% {
+            transform: translate(0,100px);
+            opacity: 0;
+        }
+
+        95% {
+            transform: translate(0,-10px);
+            opacity: 1;
+        }
+
+        100% {
+            transform: translate(0px);
+        }   
+    }
+
+
+    /* id */
+
+    #viewport {
+        padding: 5vh 0;
+    }
+
+    #preface {
+        text-align: center;
+    }
+
+    #menu {}
+
+    #menu button {
+        border: 1px solid black;
+        padding: 5px 10px;
+    }
+
+    #menu ul {
+        /* display: none; */
+        /* display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-end; */
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 20px;
+        justify-content: end;
+    }
+
+    #contact {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 1px solid black;
+        border-radius: 100px;
+        padding: 1px 20px;
+        backdrop-filter: blur(10px);
+        background-color: #ffffffa1;
+        z-index: 1000000;
+        -webkit-backdrop-filter: blur(30px);
+    }
+
+    #contact ul {
+        display: flex;
+    }
+
+    #contact li {
+        flex-direction: row;
+        margin: 0 10px 0 10px;
+    }
+
+    #intermediate {
+        text-align: center;
+    }
+
+    #intermediate ul {
+        display: block;
+        gap: 20px;
+    }
+
+    #ywaste {
+        background-color: #dbdbdb;
+        color: #3a8080;
+    }
+
+    #ywaste span {
+        border: 1px solid #3a8080;
+    }
+
+    #ywastemockup1 {
+        background-image: url("../img/headline/ywaste/browse.png");
+    }
+
+    #ywastemockup2 {
+        background-image: url("../img/headline/ywaste/vendor.png");
+    }
+
+    #ywastemockup3 {
+        background-image: url("../img/headline/ywaste/map.png");
+    }
+
+    #panasonicmockup1 {
+        background-image: url("../img/headline/panasonic/home.png");
+    }
+
+    #panasonicmockup2 {
+        background-image: url("../img/headline/panasonic/search.png");
+    }
+
+    #panasonicmockup3 {
+        background-image: url("../img/headline/panasonic/secondpage.png");
+    }
+
+    #panasonic {
+        border: solid #064288;
+        border-width: 2px 0px;
+        color: #064288;
+    }
+
+    #panasonic span {
+        border: 1px solid #064288;
+    }
+
+    #album {
+        background-image: url("../img/headline/album/albumbg.png");
+        color: white;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    #album span {
+        border: 1px solid white;
+    }
+
+    #recents img {
+        width: 100%;
+    }
+
+    #motiongraphics li {
+        border: 0px solid black;
+        width: 100%;
+        height: 10vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: 0.5s;
+    }
+
+    #detailheader {
+        display: grid;
+        grid-template-row: auto auto;
+        grid-gap: 50px;
+        width: 100%;
+    }
+
+    #detailheader img {
+        width: 200px;
+    }
+
+    #detailscreenshot img {
+        display: inline;
+        height: 50vh;
+        margin-right: 1vw;
+    }
+
+    #detailscreenshot video {
+        display: none;
+    }
+
+    #detailscreenshot {
+        height: max-content;
+        white-space: nowrap;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        -webkit-mask-image: linear-gradient(90deg, #000 80%, transparent);
+        padding-left: 10vw;
+    }
+
+    .detailbuttontext {
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        color: white;
+    }
+
+    #detailbehance {
+        display: block;
+    }
+
+    #detailbehance img,video {
+        width: 100%;
+    }
+
+    /* interactive animation */
+
+    a:hover {
+        opacity: 0.5;
+    }
+
+    #ywastemockup1:hover {
+        background-image: url("../img/headline/ywaste/browsefilter.gif");
+    }
+
+    #ywastemockup2:hover {
+        background-image: url("../img/headline/ywaste/vendor.gif");
+    }
+
+    #ywastemockup3:hover {
+        background-image: url("../img/headline/ywaste/map.gif");
+    }
+
+    #panasonicmockup1:hover {
+        background-image: url("../img/headline/panasonic/home.gif");
+    }
+
+    #panasonicmockup2:hover {
+        background-image: url("../img/headline/panasonic/search.gif");
+    }
+
+    #panasonicmockup3:hover {
+        background-image: url("../img/headline/panasonic/secondpage.gif");
+    }
+
+    #motiongraphics li:hover {
+        height: 30vh;
+    }
+
+    .motiongraphics1:hover,
+    .motiongraphics1:active {
+        background-image: url("../img/motiongraphics/quitphubbing.gif");
+    }
+
+    .motiongraphics2:hover,
+    .motiongraphics2:active {
+        background-image: url("../img/motiongraphics/zone.gif");
+    }
+
+    .motiongraphics3:hover,
+    .motiongraphics3:active {
+        background-image: url("../img/motiongraphics/dottept1.gif");
+    }
+
+    /* dark mode */
+
+    @media (prefers-color-scheme: dark) {
+        body {
+            background: #1e1e1e;
+            color: rgb(225, 225, 225);
+        }
+
+        #panasonic {
+            border-color: #0074f8;
+            color: #0074f8;
+        }
+
+        #panasonic span {
+            color: #0074f8;
+        }
+
+        p {
+            color: #acacac;
+        }
+
+        .youtubestylecell {
+            border-bottom: 1px solid rgb(66, 66, 66);
+        }
+
+        .splash {
+            background-color: #1e1e1e70;
+        }
+    }
+}
+
+/* Mobile Phone Landscape Fix */
+
+@media screen and (min-width: 568px) and (max-width: 926px) {
+    header {
+        position: inherit;
+    }
+
+    .headlinerightalbum img {
+        width: 200px;
+        margin: 0 5px;
+    }
+}
