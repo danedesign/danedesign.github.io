@@ -22,7 +22,7 @@
 
 /* Resolution 4:3 1024x1366 (iPad Pro Portrait & iPad Air Landscape) */
 
-@media screen and (min-width:1024px) and (max-width:1366px) {
+@media screen and (min-width:1024px) and (max-width:1440px) {
     #viewport {
         padding: 1em 7vw;
     }
