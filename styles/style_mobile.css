@@ -122,7 +122,7 @@
     }
 
     section h1 {
-        font-size: 10em;
+        font-size: 10vw;
     }
 
     section h2 {
@@ -231,16 +231,16 @@
     }
 
     .motiongraphics1 {
-        background-image: url("../img/motiongraphics/quitphubbing.jpg");
+        background-image: url("/img/motiongraphics/quitphubbing.jpg");
         margin-bottom: 1vh;
     }
 
     .motiongraphics2 {
-        background-image: url("../img/motiongraphics/zone.png");
+        background-image: url("/img/motiongraphics/zone.png");
     }
 
     .motiongraphics3 {
-        background-image: url("../img/motiongraphics/dottept1.jpg");
+        background-image: url("/img/motiongraphics/dottept1.jpg");
         margin-top: 1vh;
     }
 
@@ -269,7 +269,7 @@
     .landscapepicture {
         width: 100%;
         height: 30vh;
-        background-image: url("../img/about/profile_1.jpg");
+        background-image: url("/img/about/profile_1.jpg");
         background-repeat: no-repeat;
         background-position: top;
         background-size: cover;
@@ -305,7 +305,7 @@
         z-index: 10000000000000000;
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
-        /* background-image: url("../img/splash/daienlyusplash.png");
+        /* background-image: url("/img/splash/daienlyusplash.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; */
@@ -360,7 +360,7 @@
     }
 
     #preface {
-        text-align: center;
+        /* text-align: center; */
     }
 
     #menu {}
@@ -423,30 +423,6 @@
         border: 1px solid #3a8080;
     }
 
-    #ywastemockup1 {
-        background-image: url("../img/headline/ywaste/browse.png");
-    }
-
-    #ywastemockup2 {
-        background-image: url("../img/headline/ywaste/vendor.png");
-    }
-
-    #ywastemockup3 {
-        background-image: url("../img/headline/ywaste/map.png");
-    }
-
-    #panasonicmockup1 {
-        background-image: url("../img/headline/panasonic/home.png");
-    }
-
-    #panasonicmockup2 {
-        background-image: url("../img/headline/panasonic/search.png");
-    }
-
-    #panasonicmockup3 {
-        background-image: url("../img/headline/panasonic/secondpage.png");
-    }
-
     #panasonic {
         border: solid #064288;
         border-width: 2px 0px;
@@ -457,8 +433,37 @@
         border: 1px solid #064288;
     }
 
+    #mpd {
+        background-color: #031d57;
+        color: #ffffff;
+    }
+
+    #ywastemockup1 {
+        background-image: url("/img/headline/ywaste/browse.png");
+    }
+
+    #ywastemockup2 {
+        background-image: url("/img/headline/ywaste/vendor.png");
+    }
+
+    #ywastemockup3 {
+        background-image: url("/img/headline/ywaste/map.png");
+    }
+
+    #panasonicmockup1 {
+        background-image: url("/img/headline/panasonic/home.png");
+    }
+
+    #panasonicmockup2 {
+        background-image: url("/img/headline/panasonic/search.png");
+    }
+
+    #panasonicmockup3 {
+        background-image: url("/img/headline/panasonic/secondpage.png");
+    }
+
     #album {
-        background-image: url("../img/headline/album/albumbg.png");
+        background-image: url("/img/headline/album/albumbg.png");
         color: white;
         background-position: center;
         background-repeat: no-repeat;
@@ -536,27 +541,27 @@
     }
 
     #ywastemockup1:hover {
-        background-image: url("../img/headline/ywaste/browsefilter.gif");
+        background-image: url("/img/headline/ywaste/browsefilter.gif");
     }
 
     #ywastemockup2:hover {
-        background-image: url("../img/headline/ywaste/vendor.gif");
+        background-image: url("/img/headline/ywaste/vendor.gif");
     }
 
     #ywastemockup3:hover {
-        background-image: url("../img/headline/ywaste/map.gif");
+        background-image: url("/img/headline/ywaste/map.gif");
     }
 
     #panasonicmockup1:hover {
-        background-image: url("../img/headline/panasonic/home.gif");
+        background-image: url("/img/headline/panasonic/home.gif");
     }
 
     #panasonicmockup2:hover {
-        background-image: url("../img/headline/panasonic/search.gif");
+        background-image: url("/img/headline/panasonic/search.gif");
     }
 
     #panasonicmockup3:hover {
-        background-image: url("../img/headline/panasonic/secondpage.gif");
+        background-image: url("/img/headline/panasonic/secondpage.gif");
     }
 
     #motiongraphics li:hover {
@@ -565,17 +570,17 @@
 
     .motiongraphics1:hover,
     .motiongraphics1:active {
-        background-image: url("../img/motiongraphics/quitphubbing.gif");
+        background-image: url("/img/motiongraphics/quitphubbing.gif");
     }
 
     .motiongraphics2:hover,
     .motiongraphics2:active {
-        background-image: url("../img/motiongraphics/zone.gif");
+        background-image: url("/img/motiongraphics/zone.gif");
     }
 
     .motiongraphics3:hover,
     .motiongraphics3:active {
-        background-image: url("../img/motiongraphics/dottept1.gif");
+        background-image: url("/img/motiongraphics/dottept1.gif");
     }
 
     /* dark mode */
@@ -605,6 +610,7 @@
 
         .splash {
             background-color: #1e1e1e70;
+            text-align: center;
         }
     }
 }

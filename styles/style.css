@@ -65,7 +65,7 @@
     }
 
     section h1 {
-        font-size: 10em;
+        font-size: 2vw;
     }
 
     section h2 {}
@@ -247,17 +247,17 @@
     }
 
     .motiongraphics1 {
-        background-image: url("../img/motiongraphics/quitphubbing.jpg");
+        background-image: url("/img/motiongraphics/quitphubbing.jpg");
         margin-right: 5px;
     }
 
     .motiongraphics2 {
-        background-image: url("../img/motiongraphics/zone.png");
+        background-image: url("/img/motiongraphics/zone.png");
         margin: 0 5px 0 5px;
     }
 
     .motiongraphics3 {
-        background-image: url("../img/motiongraphics/dottept1.jpg");
+        background-image: url("/img/motiongraphics/dottept1.jpg");
         margin-left: 5px;
     }
 
@@ -268,7 +268,7 @@
     .landscapepicture {
         width: 100%;
         height: 30vh;
-        background-image: url("../img/about/profile_1.jpg");
+        background-image: url("/img/about/profile_1.jpg");
         background-repeat: no-repeat;
         background-position: top;
         background-size: cover;
@@ -345,7 +345,7 @@
         animation-fill-mode: forwards;
         z-index: 10000000000000000;
         backdrop-filter: blur(10px);
-        /* background-image: url("../img/splash/daienlyusplash.png");
+        /* background-image: url("/img/splash/daienlyusplash.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover; */
@@ -398,7 +398,7 @@
     /* id */
 
     #viewport {
-        padding: 1em 14vw 1em 14vw;
+        padding: 1em 10vw 1em 10vw;
         /* animation: bounce 1s ease-in 0s initial normal forwards; */
         animation-name: fly-in;
         animation-duration: 1s;
@@ -477,30 +477,6 @@
         border: 1px solid #3a8080;
     }
 
-    #ywastemockup1 {
-        background-image: url("../img/headline/ywaste/browse.png");
-    }
-
-    #ywastemockup2 {
-        background-image: url("../img/headline/ywaste/vendor.png");
-    }
-
-    #ywastemockup3 {
-        background-image: url("../img/headline/ywaste/map.png");
-    }
-
-    #panasonicmockup1 {
-        background-image: url("../img/headline/panasonic/home.png");
-    }
-
-    #panasonicmockup2 {
-        background-image: url("../img/headline/panasonic/search.png");
-    }
-
-    #panasonicmockup3 {
-        background-image: url("../img/headline/panasonic/secondpage.png");
-    }
-
     #panasonic {
         /* background-color: #064288;
     color: white; */
@@ -512,8 +488,49 @@
         border: 1px solid #064288;
     }
 
+    #mpd {
+        background-color: #031d57;
+        color: #ffffff;
+    }
+
+    #ywastemockup1 {
+        background-image: url("/img/headline/ywaste/browse.png");
+    }
+
+    #ywastemockup2 {
+        background-image: url("/img/headline/ywaste/vendor.png");
+    }
+
+    #ywastemockup3 {
+        background-image: url("/img/headline/ywaste/map.png");
+    }
+
+    #panasonicmockup1 {
+        background-image: url("/img/headline/panasonic/home.png");
+    }
+
+    #panasonicmockup2 {
+        background-image: url("/img/headline/panasonic/search.png");
+    }
+
+    #panasonicmockup3 {
+        background-image: url("/img/headline/panasonic/secondpage.png");
+    }
+
+    #mpdmockup1 {
+        background-image: url("/img/headline/mpd/homepage.png");
+    }
+
+    #mpdmockup2 {
+        background-image: url("/img/headline/mpd/playbag.png");
+    }
+
+    #mpdmockup3 {
+        background-image: url("/img/headline/mpd/nowplaying.png");
+    }
+
     #album {
-        background-image: url("../img/headline/album/albumbg.png");
+        background-image: url("/img/headline/album/albumbg.png");
         color: white;
         background-position: center;
         background-repeat: no-repeat;
@@ -528,7 +545,7 @@
         max-width: 22vw;
         border-radius: 10px;
     }
-
+padding
     #motiongraphics li {
         border: 0px solid black;
         width: 35%;
@@ -588,8 +605,8 @@
     /* interactive animation */
 
     a:hover {
-        /* transform: scale(1.02); */
-        text-decoration: underline;
+        transform: scale(1.02);
+        /* text-decoration: underline; */
     }
 
     a:active {
@@ -603,27 +620,39 @@
     }
 
     #ywastemockup1:hover {
-        background-image: url("../img/headline/ywaste/browsefilter.gif");
+        background-image: url("/img/headline/ywaste/browsefilter.gif");
     }
 
     #ywastemockup2:hover {
-        background-image: url("../img/headline/ywaste/vendor.gif");
+        background-image: url("/img/headline/ywaste/vendor.gif");
     }
 
     #ywastemockup3:hover {
-        background-image: url("../img/headline/ywaste/map.gif");
+        background-image: url("/img/headline/ywaste/map.gif");
     }
 
     #panasonicmockup1:hover {
-        background-image: url("../img/headline/panasonic/home.gif");
+        background-image: url("/img/headline/panasonic/home.gif");
     }
 
     #panasonicmockup2:hover {
-        background-image: url("../img/headline/panasonic/search.gif");
+        background-image: url("/img/headline/panasonic/search.gif");
     }
 
     #panasonicmockup3:hover {
-        background-image: url("../img/headline/panasonic/secondpage.gif");
+        background-image: url("/img/headline/panasonic/secondpage.gif");
+    }
+
+    #mpdmockup1:hover {
+        background-image: url("/img/headline/mpd/homepage.gif");
+    }
+
+    #mpdmockup2:hover {
+        background-image: url("/img/headline/mpd/playbagoverlay.gif");
+    }
+
+    #mpdmockup3:hover {
+        background-image: url("/img/headline/mpd/nowplaying.gif");
     }
 
     #motiongraphics li:hover {
@@ -636,15 +665,15 @@
     }
 
     .motiongraphics1:hover {
-        background-image: url("../img/motiongraphics/quitphubbing.gif");
+        background-image: url("/img/motiongraphics/quitphubbing.gif");
     }
 
     .motiongraphics2:hover {
-        background-image: url("../img/motiongraphics/zone.gif");
+        background-image: url("/img/motiongraphics/zone.gif");
     }
 
     .motiongraphics3:hover {
-        background-image: url("../img/motiongraphics/dottept1.gif");
+        background-image: url("/img/motiongraphics/dottept1.gif");
     }
 
     /* dark mode */
