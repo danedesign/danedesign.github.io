@@ -8,7 +8,7 @@
     }
 
     body {
-        font-family: 'Poppins', SF Pro Text, Arial, Helvetica, PingFang SC, sans-serif;
+        font-family: '-apple-system', 'SF Pro Display', 'Helvetica Neue', 'Arial', 'PingFang SC', sans-serif;
         margin: 0;
     }
 
@@ -25,6 +25,10 @@
     h2 {
         margin-block-start: 10px;
         margin-block-end: -10px;
+    }
+
+    h3 {
+        font-weight: 400;
     }
 
     ul {
@@ -48,7 +52,11 @@
         background-color: rgba(255, 255, 255, 0.887);
         backdrop-filter: blur(50px);
         -webkit-backdrop-filter: blur(50px);
-        padding: 1em 5vw 1em 5vw;
+        padding: 1vh 5vw 1vh 5vw;
+    }
+
+    header img {
+        max-width: 1vw;
     }
 
     section {
@@ -580,7 +588,12 @@
     /* interactive animation */
 
     a:hover {
-        transform: scale(1.02);
+        /* transform: scale(1.02); */
+        text-decoration: underline;
+    }
+
+    a:active {
+        transform: scale(0.95);
     }
 
     button:hover {
