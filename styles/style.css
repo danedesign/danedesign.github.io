@@ -141,6 +141,15 @@
     border-radius: 100%; */
     }
 
+    .headline-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+        row-gap: 30px;
+        column-gap: 30px;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
     .headline {
         padding: 0em 3em 0em 3em;
         margin: 6vh 0 5vh 0;
@@ -154,6 +163,8 @@
         flex-direction: column;
         height: max-content;
         padding-top: 3vh;
+        position: relative;
+        min-height: 500px;
     }
 
     .headlineleft {
@@ -501,7 +512,7 @@
     }
 
     #ywastemockup1 {
-        background-image: url("/img/headline/ywaste/browse.png");
+        background-image: url("/img/headline/ywaste/browsefilter.png");
     }
 
     #ywastemockup2 {
@@ -510,6 +521,10 @@
 
     #ywastemockup3 {
         background-image: url("/img/headline/ywaste/map.png");
+    }
+
+    #ywastemockup4 {
+        background-image: url("/img/headline/ywaste/darkmode1.png");
     }
 
     #panasonicmockup1 {
@@ -525,11 +540,11 @@
     }
 
     #mpdmockup1 {
-        background-image: url("/img/headline/mpd/homepage.png");
+        background-image: url("/img/headline/mpd/playbagpage.png");
     }
 
     #mpdmockup2 {
-        background-image: url("/img/headline/mpd/playbag.png");
+        background-image: url("/img/headline/mpd/playbagoverlay.png");
     }
 
     #mpdmockup3 {
@@ -638,6 +653,10 @@
         background-image: url("/img/headline/ywaste/map.gif");
     }
 
+    #ywastemockup4:hover {
+        background-image: url("/img/headline/ywaste/darkmode.gif");
+    }
+
     #panasonicmockup1:hover {
         background-image: url("/img/headline/panasonic/home.gif");
     }
@@ -651,7 +670,7 @@
     }
 
     #mpdmockup1:hover {
-        background-image: url("/img/headline/mpd/homepage.gif");
+        background-image: url("/img/headline/mpd/nowplaying.gif");
     }
 
     #mpdmockup2:hover {
@@ -659,7 +678,7 @@
     }
 
     #mpdmockup3:hover {
-        background-image: url("/img/headline/mpd/nowplaying.gif");
+        background-image: url("/img/headline/mpd/settings.gif");
     }
 
     #motiongraphics li:hover {
