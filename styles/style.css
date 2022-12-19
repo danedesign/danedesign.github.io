@@ -1,3 +1,22 @@
+body {
+    background: linear-gradient(to bottom, #fff 0%, #E2FFFA 100%);
+    font-family: '-apple-system', 'SF Pro Display', 'Helvetica Neue', 'Arial', 'PingFang SC', sans-serif;
+}
+
+header {
+    z-index: 1000000000000000000000;
+}
+
+h1 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+h2 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
 @media screen and (min-width: 926px) {
 
     /* overall control */
@@ -8,7 +27,6 @@
     }
 
     body {
-        font-family: '-apple-system', 'SF Pro Display', 'Helvetica Neue', 'Arial', 'PingFang SC', sans-serif;
         margin: 0;
     }
 
@@ -20,11 +38,6 @@
 
     h1 {
         font-weight: bolder;
-    }
-
-    h2 {
-        margin-block-start: 10px;
-        margin-block-end: -10px;
     }
 
     h3 {
@@ -152,7 +165,7 @@
 
     .headline {
         padding: 0em 3em 0em 3em;
-        margin: 6vh 0 5vh 0;
+        /* margin: 6vh 0 5vh 0; */
         border: 0px black solid;
         height: 400px;
         display: flex;
@@ -211,7 +224,7 @@
     .horizontaldiv {
         display: grid;
         grid-template-columns: auto auto auto;
-        row-gap: 30px;
+        row-gap: 100px;
         column-gap: 30px;
         justify-content: space-between;
     }
@@ -279,8 +292,16 @@
         margin-left: 5px;
     }
 
+    .mobile-tablet-only {
+        display: none;
+    }
+
     .mobileonly {
         display: none;
+    }
+
+    .desktop-tablet-only {
+        display: inherit;
     }
 
     .landscapepicture {
@@ -440,6 +461,8 @@
 
     #preface {
         text-align: center;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
     }
 
     #menu {

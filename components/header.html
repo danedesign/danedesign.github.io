@@ -1,22 +1,26 @@
 <link rel="stylesheet" href="/styles/style.css">
 <link rel="stylesheet" href="/styles/style_mobile.css">
+<script src="/header.js"></script>
+<script src="https://kit.fontawesome.com/363ac3910f.js" crossorigin="anonymous"></script>
 
-    <a href="/">
         <div class="headerleft">
+            <a href="/">
             <div class="profile">
                 <img src="/img/profile/profile.png" width="50px" alt="">
-                <!-- <div class="responsivemenu">
-                    <button>WORK</button>
-                    <button>ABOUT</button>
-                    <button>中 | EN</button>
-                </div> -->
             </div>
+            </a>
+            <a href="/">
             <div>
-                <h3><strong>Dane Wu</strong> the Digital Designer</h3>
+                <h3><strong>Dane Wu</strong> Digital Designer</h3>
             </div>
+            </a>
+            <a class="mobileonly" id="menu-toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+
         </div>
-    </a>
-    <div id="menu">
+    <div id="menu" class="desktop-tablet-only">
+        <!-- <a class="mobileonly" id="menu-toggle-btn" style="position: fixed; right: 40px; top: 40px;">X</a> -->
         <ul>
             <a href="/work">
                 <li>Work</li>
@@ -35,3 +39,25 @@
             </a>
         </ul>
     </div>
+
+    <div id="menu-mobile" class="mobileonly">
+        <!-- <a class="mobileonly" id="menu-toggle-btn" style="position: fixed; right: 40px; top: 40px;">X</a> -->
+        <ul>
+            <a href="/work">
+                <li>Work</li>
+            </a>
+            <a href="/video">
+                <li>Media</li>
+            </a>
+            <a href="/about">
+                <li>About</li>
+            </a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScRxW1E2tMTgcizae3weVNfsA2Api-c5fv0oGMJXrnqwnJWJQ/viewform?usp=share_link" target="_blank">
+                <li>Request CV</li>
+            </a>
+            <a href="/indexcn">
+                <li>中 | EN</li>
+            </a>
+        </ul>
+    </div>
+

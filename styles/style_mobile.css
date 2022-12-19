@@ -10,6 +10,18 @@
     #viewport {
         padding: 1em 7vw;
     }
+
+    .mobile-tablet-only {
+        display: none;
+    }
+
+    .mobileonly {
+        display: none;
+    }
+
+    .desktop-tablet-only {
+        display: inherit;
+    }
 }
 
 /* Resolution 4:3 1366x1024 (iPad Pro Landscape) */
@@ -17,6 +29,18 @@
 @media screen and (max-width:1366px) {
     #viewport {
         padding: 1em 6vw;
+    }
+
+    .mobile-tablet-only {
+        display: inherit;
+    }
+
+    .mobileonly {
+        display: none;
+    }
+
+    .desktop-tablet-only {
+        display: inherit;
     }
 }
 
@@ -46,7 +70,7 @@
         padding: 2vh 0 5vh 0;
     }
 
-    .mobileonly {
+    .mobile-tablet-only {
         display: inherit;
     }
 }
@@ -63,8 +87,6 @@
     }
 
     body {
-        font-family: SF Pro Text, Helvetica Neue, Arial, PingFang SC, sans-serif;
-        padding: 50px 0 0 0;
         margin: 0;
         max-width: 100%;
         overflow-x: hidden;
@@ -99,20 +121,58 @@
         color: #838383;
     }
 
-    /* except profile logo */
     header {
-        line-height: 60%;
-        padding: 2em 5vw 0em 5vw;
+        position: sticky;
+        top: 0px;
+        line-height: 0;
         opacity: 1;
-        /* display: flex;
-        flex-direction: row;
-        justify-content: space-between; */
+        background: rgb(255, 255, 255);
+        border-bottom: #000 solid 1px;
     }
 
-    header .profile {
+    .headerleft {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #menu-mobile {
+        /* display: none; */
+        /* display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-end; */
+        /* display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        gap: 20px;
+        justify-content: start; */
         position: fixed;
-        top: 20px;
-        z-index: 1000000;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 2em;
+        background-color: rgba(219, 219, 219, 0.527);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        z-index: -10000;
+        border-bottom: #000 solid 1px;
+    }
+
+    #menu-mobile ul {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .profile img {
+        width: 20px;
     }
 
     /* except header */
@@ -161,7 +221,8 @@
         margin-bottom: 20px;
     }
 
-    button h3,p {
+    button h3,
+    p {
         color: inherit;
     }
 
@@ -171,11 +232,22 @@
 
     /* class */
 
+    .mobile-tablet-only {
+        display: inherit;
+    }
+
+    .mobileonly {
+        display: inherit;
+    }
+
+    .desktop-tablet-only {
+        display: none;
+    }
+
     .responsivemenu {
         /* display: none; */
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: auto auto auto;
     }
 
     .headline {
@@ -305,6 +377,7 @@
         z-index: 10000000000000000;
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
+        text-align: center;
         /* background-image: url("/img/splash/daienlyusplash.png");
         background-repeat: no-repeat;
         background-position: center;
@@ -316,7 +389,7 @@
         display: block;
         animation-name: ascending;
         animation-duration: 1s;
-        animation-timing-function:cubic-bezier(0.77, 0, 0.175, 1);
+        animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
         animation-fill-mode: forwards;
     }
 
@@ -338,18 +411,18 @@
 
     @keyframes ascending {
         0% {
-            transform: translate(0,100px);
+            transform: translate(0, 100px);
             opacity: 0;
         }
 
         95% {
-            transform: translate(0,-10px);
+            transform: translate(0, -10px);
             opacity: 1;
         }
 
         100% {
             transform: translate(0px);
-        }   
+        }
     }
 
 
@@ -357,29 +430,6 @@
 
     #viewport {
         padding: 5vh 0;
-    }
-
-    #preface {
-        /* text-align: center; */
-    }
-
-    #menu {}
-
-    #menu button {
-        border: 1px solid black;
-        padding: 5px 10px;
-    }
-
-    #menu ul {
-        /* display: none; */
-        /* display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: flex-end; */
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        gap: 20px;
-        justify-content: end;
     }
 
     #contact {
@@ -530,7 +580,8 @@
         display: block;
     }
 
-    #detailbehance img,video {
+    #detailbehance img,
+    video {
         width: 100%;
     }
 
@@ -618,10 +669,7 @@
 /* Mobile Phone Landscape Fix */
 
 @media screen and (min-width: 568px) and (max-width: 926px) {
-    header {
-        position: inherit;
-    }
-
+    
     .headlinerightalbum img {
         width: 200px;
         margin: 0 5px;
