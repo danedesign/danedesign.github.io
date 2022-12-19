@@ -5,6 +5,7 @@
 
     header {
         padding: 1vh 5vw;
+        z-index: 1000000000000000000000000000;
     }
 
     #viewport {
@@ -41,6 +42,10 @@
 
     .desktop-tablet-only {
         display: inherit;
+    }
+    
+    header {
+        z-index: 1000000000000000000000000000;
     }
 }
 
@@ -91,6 +96,7 @@
         max-width: 100%;
         overflow-x: hidden;
         -webkit-user-select: none;
+        font-family: '-apple-system', 'SF Pro Display', 'Helvetica Neue', 'Arial', 'PingFang SC', sans-serif;
     }
 
     a {
@@ -128,6 +134,7 @@
         opacity: 1;
         background: rgb(255, 255, 255);
         border-bottom: #000 solid 1px;
+        z-index: 1000000000000000000000000000;
     }
 
     .headerleft {
@@ -640,6 +647,11 @@
         body {
             background: #1e1e1e;
             color: rgb(225, 225, 225);
+        }
+
+        header {
+            background: #1e1e1e;
+            border-bottom: rgb(0, 0, 0) solid 1px;    
         }
 
         #panasonic {
