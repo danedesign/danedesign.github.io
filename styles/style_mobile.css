@@ -654,6 +654,10 @@
             border-bottom: rgb(0, 0, 0) solid 1px;    
         }
 
+        #menu-mobile {
+            background-color: rgba(30, 30, 30, 0.466);
+        }
+
         #panasonic {
             border-color: #0074f8;
             color: #0074f8;
