@@ -1,10 +1,13 @@
 body {
-    background: linear-gradient(to bottom, #fff 0%, #E2FFFA 100%);
     font-family: '-apple-system', 'SF Pro Display', 'Helvetica Neue', 'Arial', 'PingFang SC', sans-serif;
 }
 
 header {
     z-index: 1000000000000000000000;
+}
+
+footer {
+    padding-top: 5vh;
 }
 
 h1 {
@@ -87,13 +90,12 @@ h2 {
         text-transform: uppercase;
     }
 
-    section span {
+    .headline span {
         border-radius: 100px;
         background: #f5f5f527;
         padding: 4px 10px 4px 10px;
         position: relative;
         font-weight: lighter;
-        /* ie6 border fix*/
     }
 
     footer {
@@ -103,11 +105,12 @@ h2 {
     button {
         padding: 5px 50px;
         background: #0074f8;
-        border-radius: 5px;
+        border-radius: 10px;
         border: 0px;
         font-family: inherit;
         transition: 0.1s;
-        margin: 0 20px;
+        margin: 0;
+        min-height: 5em;
     }
 
     button h3,
@@ -164,20 +167,17 @@ h2 {
     }
 
     .headline {
-        padding: 0em 3em 0em 3em;
+        padding: 0em 5em 0em 5em;
         /* margin: 6vh 0 5vh 0; */
         border: 0px black solid;
-        height: 400px;
         display: flex;
         /* flex-direction: row; */
         justify-content: space-between;
         position: relative;
         display: flex;
         flex-direction: column;
-        height: max-content;
         padding-top: 3vh;
-        position: relative;
-        min-height: 500px;
+        height: 500px;
     }
 
     .headlineleft {
@@ -202,11 +202,10 @@ h2 {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 2vh 0 5vh 0;
     }
 
     .headlinerightalbum img {
-        margin: 0 10px 0 0;
+        margin: 0 10px;
         border-radius: 10px;
         width: 220px;
     }
@@ -404,6 +403,126 @@ h2 {
         animation: cubic-bezier(0.785, 0.135, 0.15, 0.86);
     }
 
+    .slider {
+        height: 150px;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+
+    .slider::before,
+    .slider::after {
+        background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+        content: "";
+        height: 150px;
+        position: absolute;
+        width: 200px;
+        z-index: 2;
+    }
+
+    .slider::after {
+        right: 0;
+        top: 0;
+        transform: rotateZ(180deg);
+    }
+
+    .slider::before {
+        left: 0;
+        top: 0;
+    }
+
+    .slider .slide-track {
+        animation: scroll 40s linear infinite;
+        display: flex;
+        width: calc(250px * 14);
+    }
+
+    .slider .slide {
+        height: 100px;
+        width: 250px;
+    }
+
+    .fullwidthvideo {
+        width: 100%;
+    }
+
+    .gradient-text {
+        /* Fallback: Set a background color. */
+        background-color: #fd1d24;
+        
+        /* Create the gradient. */
+         background-image: linear-gradient(
+              45deg,
+              #CA4246 16.666%, 
+              #E16541 16.666%, 
+              #E16541 33.333%, 
+              #F18F43 33.333%, 
+              #F18F43 50%, 
+              #8B9862 50%, 
+              #8B9862 66.666%, 
+              #476098 66.666%, 
+              #476098 83.333%, 
+              #A7489B 83.333%);
+        
+        /* Set the background size and repeat properties. */
+        background-size: 100%;
+        background-repeat: repeat;
+      
+        /* Use the text as a mask for the background. */
+        /* This will show the gradient as a text color rather than element bg. */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        
+        /* Animate the text when loading the element. */
+          /* This animates it on page load and when hovering out. */
+          animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+      
+      }
+      
+      .gradient-text:hover{
+          animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+      }
+      
+      
+      /* Move the background and make it smaller. */
+      /* Animation shown when entering the page and after the hover animation. */
+      @keyframes rainbow-text-simple-animation-rev {
+          0% {
+              background-size: 650%;
+          }
+          40% {
+              background-size: 650%;
+          }
+          100% {
+              background-size: 100%;
+          }
+      }
+      
+      /* Move the background and make it larger. */
+      /* Animation shown when hovering over the text. */
+      @keyframes rainbow-text-simple-animation {
+          0% {
+              background-size: 100%;
+          }
+          80% {
+              background-size: 650%;
+          }
+          100% {
+              background-size: 650%;
+          }
+      }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(calc(-250px * 7));
+        }
+    }
+
     @keyframes open {
         0% {
             transform: translate(0, 0);
@@ -428,10 +547,6 @@ h2 {
             transform: scale(1);
         }
 
-    }
-
-    .fullwidthvideo {
-        width: 100%;
     }
 
     /* id */
@@ -519,10 +634,9 @@ h2 {
     }
 
     #panasonic {
-        /* background-color: #064288;
-    color: white; */
-        border: 2px solid #064288;
-        color: #064288;
+        background-color: #064288;
+        color: white;
+        /* border: 2px solid #064288; */
     }
 
     #panasonic span {
@@ -603,7 +717,7 @@ h2 {
 
     #detailheader {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 7em auto;
         grid-gap: 10vw;
         padding: 2vw 5vw;
         border: 1px black solid;
@@ -651,6 +765,7 @@ h2 {
 
     a:hover {
         transform: scale(1.02);
+        /* background-color: #000; */
         /* text-decoration: underline; */
     }
 
@@ -659,8 +774,8 @@ h2 {
     }
 
     button:hover {
-        transform: scale(1.05);
-        filter: drop-shadow(0px 20px 20px rgba(3, 53, 146, 0.362));
+        transform: scale(1.02) translateY(-5px);
+        filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.206));
         /* background: linear-gradient(to bottom, #548aff, #2f71ff); */
     }
 
@@ -741,15 +856,6 @@ h2 {
 
         header {
             background: #1e1e1e70;
-        }
-
-        #panasonic {
-            border-color: #0074f8;
-            color: #0074f8;
-        }
-
-        #panasonic span {
-            color: #0074f8;
         }
 
         #detailheader {
