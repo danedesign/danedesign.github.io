@@ -881,5 +881,10 @@ h2 {
         .splash {
             background-color: #1e1e1e70;
         }
+
+        .slider::before,
+        .slider::after {
+            background: linear-gradient(to right, #1e1e1e, rgba(255, 255, 255, 0) 100%);
+        }
     }
 }
