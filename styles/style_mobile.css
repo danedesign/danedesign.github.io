@@ -378,6 +378,11 @@
     }
     
 
+    .icon-badge img {
+        width: 80px;
+        padding-left: 2vw;
+    }
+
     .splash {
         position: fixed;
         top: 0;
@@ -567,8 +572,11 @@
             transform: translateX(calc(-250px * 7));
         }
     }
+<<<<<<< Updated upstream
 
 
+=======
+>>>>>>> Stashed changes
 
     /* id */
 

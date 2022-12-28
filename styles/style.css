@@ -20,6 +20,10 @@ h2 {
     margin-block-end: 0;
 }
 
+a {
+    opacity: 0.7;
+}
+
 @media screen and (min-width: 926px) {
 
     /* overall control */
@@ -96,6 +100,8 @@ h2 {
         padding: 4px 10px 4px 10px;
         position: relative;
         font-weight: lighter;
+        border: 1px solid #1e1e1e;
+        opacity: 0.5;
     }
 
     footer {
@@ -167,9 +173,10 @@ h2 {
     }
 
     .headline {
+        background-color: #e9e9e9;
         padding: 0em 5em 0em 5em;
         /* margin: 6vh 0 5vh 0; */
-        border: 0px black solid;
+        /* border: 0px black solid; */
         display: flex;
         /* flex-direction: row; */
         justify-content: space-between;
@@ -209,6 +216,10 @@ h2 {
         margin: 0 10px;
         border-radius: 10px;
         width: 220px;
+    }
+
+    .dpi100only {
+        display: inherit;
     }
 
     .mockup {
@@ -368,6 +379,16 @@ h2 {
 
     .albumcover {
         border-radius: 5px;
+    }
+
+    .icon-badge {
+        position: absolute;
+        right: 10px;
+        bottom: 0px;
+    }
+
+    .icon-badge img {
+        width: 80px;
     }
 
     .splash {
@@ -642,27 +663,13 @@ h2 {
     }
 
     #ywaste {
-        background-color: #dbdbdb;
-        color: #3a8080;
+        background-color: #7ED5D0;
+        color: #275050;
     }
 
     #ywaste span {
         border: 1px solid #3a8080;
-    }
-
-    #panasonic {
-        background-color: #064288;
-        color: white;
-        /* border: 2px solid #064288; */
-    }
-
-    #panasonic span {
-        border: 1px solid #064288;
-    }
-
-    #mpd {
-        background-color: #031d57;
-        color: #ffffff;
+        color: #275050;
     }
 
     #ywastemockup1 {
@@ -706,15 +713,15 @@ h2 {
     }
 
     #album {
-        background-image: url("/img/headline/album/albumbg.png");
+        /* background-image: url("/img/headline/album/albumbg.png");
         color: white;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover; */
     }
 
     #album span {
-        border: 1px solid white;
+        /* border: 1px solid white; */
     }
 
     #recents img {
@@ -780,10 +787,12 @@ h2 {
 
     /* interactive animation */
 
+    .headline a:hover {
+        text-decoration: underline;
+    }
+
     a:hover {
-        transform: scale(1.02);
-        /* background-color: #000; */
-        /* text-decoration: underline; */
+        opacity: 1;
     }
 
     a:active {
@@ -903,5 +912,9 @@ h2 {
         .slider::after {
             background: linear-gradient(to right, #1e1e1e, rgba(255, 255, 255, 0) 100%);
         }
+
+        .headline {
+            background-color: #313131;
+        }    
     }
 }
