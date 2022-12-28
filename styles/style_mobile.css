@@ -376,7 +376,6 @@
         display: block;
         width: 100%;
     }
-    
 
     .icon-badge img {
         width: 80px;
@@ -572,11 +571,6 @@
             transform: translateX(calc(-250px * 7));
         }
     }
-<<<<<<< Updated upstream
-
-
-=======
->>>>>>> Stashed changes
 
     /* id */
 
@@ -824,7 +818,6 @@
             background-color: #1e1e1e70;
             text-align: center;
         }
-
     }
 }
 
