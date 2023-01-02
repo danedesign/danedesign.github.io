@@ -224,6 +224,18 @@
         margin: 100px 0;
     }
 
+    .section-awards-right-portion {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .section-awards-right-portion svg {
+        width: 150px;
+    }
+
+    
+
     .headline-item {
         margin: 100px 0;
         border: 0px black solid;
@@ -299,6 +311,10 @@
         background-size: contain;
         margin: 0 0 0 5vw;
         border-radius: 13px;
+    }
+
+    .headline-lower-portion-icon img {
+        width: 150px;
     }
 
     .headline-fixed-icon-badge {
@@ -635,19 +651,20 @@
         border: 1px solid #3a8080;
     }
 
-    #headline-mpd-mockup- {
-        border: solid #064288;
-        border-width: 2px 0px;
-        color: #064288;
-    }
-
-    #headline-mpd-mockup- span {
-        border: 1px solid #064288;
-    }
-
     #headline-mpd {
         background-color: #031d57;
-        color: #ffffff;
+    }
+
+    #headline-panasonic {
+        background-color: #0056a8;
+    }
+
+    #headline-album {
+        background-image: url("/img/headline/album/albumbg.png");
+        color: white;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     #headline-ywaste-mockup-1 {
@@ -823,6 +840,10 @@
         .splash-screen {
             background-color: #1e1e1e70;
             text-align: center;
+        }
+
+        .section-awards-right-portion svg {
+            fill: #fff;
         }
     }
 }
