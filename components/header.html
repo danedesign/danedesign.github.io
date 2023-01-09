@@ -1,63 +1,79 @@
 <link rel="stylesheet" href="/styles/style.css">
 <link rel="stylesheet" href="/styles/style_mobile.css">
-<script src="/header.js"></script>
+<script src="/header-gitlab.js"></script>
 <script src="https://kit.fontawesome.com/363ac3910f.js" crossorigin="anonymous"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 
-        <div class="header-left">
-            <a href="/">
-            <div class="header-profilepic">
-                <img src="/img/profile/profile.png" width="50px" alt="">
-            </div>
-            </a>
-            <a href="/">
-            <div>
-                <h3><strong>Dane Wu</strong> Digital Designer</h3>
-            </div>
-            </a>
-            <a class="mediascreen-mobile" id="header-menu-toggle-btn">
-                <i class="fa-solid fa-bars"></i>
-            </a>
+<div class="header-left">
+    <a id="lang-change" class="mediascreen-mobile">
+        <iconify-icon inline icon="uil:english-to-chinese"></iconify-icon>
+    </a>
 
+    <a href="/">
+        <div class="header-profilepic">
+            <img src="/img/profile/profile.png" width="50px" alt="">
         </div>
-    <div id="header-menu" class="mediascreen-desktop-tablet">
-        <!-- <a class="mediascreen-mobile" id="menu-toggle-btn" style="position: fixed; right: 40px; top: 40px;">X</a> -->
-        <ul>
-            <a href="/work">
-                <li>Work</li>
-            </a>
-            <a href="/video">
-                <li>Media</li>
-            </a>
-            <a href="/about">
-                <li>About</li>
-            </a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScRxW1E2tMTgcizae3weVNfsA2Api-c5fv0oGMJXrnqwnJWJQ/viewform?usp=share_link" target="_blank">
-                <li>Request CV</li>
-            </a>
-            <a href="/indexcn">
-                <li>中 | EN</li>
-            </a>
-        </ul>
-    </div>
+    </a>
 
-    <div id="header-menu-mobile" class="mediascreen-mobile">
-        <!-- <a class="mediascreen-mobile" id="menu-toggle-btn" style="position: fixed; right: 40px; top: 40px;">X</a> -->
-        <ul>
-            <a href="/work">
-                <li>Work</li>
-            </a>
-            <a href="/video">
-                <li>Media</li>
-            </a>
-            <a href="/about">
-                <li>About</li>
-            </a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScRxW1E2tMTgcizae3weVNfsA2Api-c5fv0oGMJXrnqwnJWJQ/viewform?usp=share_link" target="_blank">
-                <li>Request CV</li>
-            </a>
-            <a href="/indexcn">
-                <li>中 | EN</li>
-            </a>
-        </ul>
-    </div>
+    <a href="/" class="mediascreen-desktop-tablet">
+        <div>
+            <h3 lang="zh"><strong>吴大东</strong> Digital Designer</h3>
+            <h3 lang="en"><strong>Dane Wu</strong> Digital Designer</h3>
+        </div>
+    </a>
 
+    <a class="mediascreen-mobile" id="header-menu-toggle-btn">
+        <iconify-icon inline icon="ic:sharp-menu"></iconify-icon>
+    </a>
+
+
+</div>
+<div id="header-menu" class="mediascreen-desktop-tablet">
+    <!-- <a class="mediascreen-mobile" id="menu-toggle-btn" style="position: fixed; right: 40px; top: 40px;">X</a> -->
+    <ul>
+        <a href="/gallery">
+            <li lang="zh">作品</li>
+            <li lang="en">Gallery</li>
+        </a>
+        <a href="/video">
+            <li lang="zh">视频作品</li>
+            <li lang="en">Media</li>
+        </a>
+        <a href="/about">
+            <li lang="zh">关于我</li>
+            <li lang="en">About</li>
+        </a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScRxW1E2tMTgcizae3weVNfsA2Api-c5fv0oGMJXrnqwnJWJQ/viewform?usp=share_link"
+            target="_blank">
+            <li lang="zh">下载简历</li>
+            <li lang="en">Request CV</li>
+        </a>
+        <a id="lang-change">
+            <li lang="en"><iconify-icon icon="emojione:flag-for-china"></iconify-icon></li>
+            <li lang="zh"><iconify-icon icon="emojione:flag-for-australia"></iconify-icon></li>
+        </a>
+    </ul>
+</div>
+
+<div id="header-menu-mobile" class="mediascreen-mobile">
+    <!-- <a class="mediascreen-mobile" id="menu-toggle-btn" style="position: fixed; right: 40px; top: 40px;">X</a> -->
+    <ul>
+        <a href="/gallery">
+            <li lang="zh">作品</li>
+            <li lang="en">Gallery</li>
+        </a>
+        <a href="/video">
+            <li lang="zh">视频作品</li>
+            <li lang="en">Media</li>
+        </a>
+        <a href="/about">
+            <li lang="zh">关于我</li>
+            <li lang="en">About</li>
+        </a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScRxW1E2tMTgcizae3weVNfsA2Api-c5fv0oGMJXrnqwnJWJQ/viewform?usp=share_link"
+            target="_blank">
+            <li lang="zh">下载简历</li>
+            <li lang="en">Request CV</li>
+        </a>
+    </ul>
+</div>

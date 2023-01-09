@@ -12,6 +12,10 @@
         padding: 1em 7vw;
     }
 
+    #section-awards {
+        padding: 1em 7vw;
+    }
+
     .mediascreen-mobile-tablet {
         display: none;
     }
@@ -32,7 +36,15 @@
 /* Resolution 4:3 1366x1024 (iPad Pro Landscape) */
 
 @media screen and (max-width:1366px) {
+    body {
+        -webkit-user-select: none;
+    }
+
     #viewport {
+        padding: 1em 6vw;
+    }
+
+    #section-awards {
         padding: 1em 6vw;
     }
 
@@ -60,7 +72,16 @@
 /* Resolution 4:3 1024x1366 (iPad Pro Portrait & iPad Air Landscape) */
 
 @media screen and (min-width:1024px) and (max-width:1440px) {
+
+    body {
+        -webkit-user-select: none;
+    }
+
     #viewport {
+        padding: 1em 7vw;
+    }
+
+    #section-awards {
         padding: 1em 7vw;
     }
 
@@ -125,6 +146,7 @@
         justify-content: space-between;
         align-items: center;
         gap: 10px;
+        height: 35px;
     }
 
     #header-menu-mobile {
@@ -167,16 +189,13 @@
 
     /* except header */
 
-    section {
-        margin: 20px 0;
-    }
-
     section h1 {
         text-transform: uppercase;
     }
 
     section>h1,
     h2,
+    h3,
     h4,
     h5,
     p {
@@ -221,26 +240,38 @@
     }
 
     .section-divider {
-        margin: 100px 0;
+        margin: 10px 0;
     }
 
-    .section-awards-right-portion {
+    .awards-showreel-vid-caption-mobile {
+        position: absolute;
+        width: 100%;
+        z-index: 10;
+        bottom: 0;
+        padding-bottom: 20px;
+        background-color: rgba(0, 0, 0, 0.266);
+        color: #fff;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    .awards-right-portion {
         display: flex;
         justify-content: center;
         gap: 20px;
     }
 
-    .section-awards-right-portion svg {
-        width: 150px;
+    .awards-right-portion svg {
+        width: 100px;
+        fill: #fff;
     }
 
-    
-
     .headline-item {
-        margin: 100px 0;
-        border: 0px black solid;
+        margin: 80px 0;
         height: min-content;
         padding: 30px 0;
+        /* display: flex;
+        flex-direction: column-reverse; */
     }
 
     .headline-item span {
@@ -377,6 +408,10 @@
         width: 100%;
     }
 
+    .list-item-video img {
+        width: 100%;
+    }
+
     .section-about-profilepic {
         width: 100%;
         height: 30vh;
@@ -431,8 +466,8 @@
         animation-delay: 2s;
         animation-fill-mode: forwards;
         z-index: 10000000000000000;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(50px);
+        -webkit-backdrop-filter: blur(50px);
         text-align: center;
         /* background-image: url("/img/splash/daienlyusplash.png");
         background-repeat: no-repeat;
@@ -610,6 +645,26 @@
         padding: 5vh 0;
     }
 
+    #section-awards-mobile h2 {
+        margin-block-end: 0;
+    }
+
+    #section-awards-mobile p {
+        margin-block-start: 2px;
+    }
+
+    #section-awards-mobile {
+        position: relative;
+        height: 500px;
+    }
+
+    #section-awards-mobile video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+    }
+
     #contact {
         position: fixed;
         bottom: 20px;
@@ -653,10 +708,12 @@
 
     #headline-mpd {
         background-color: #031d57;
+        color: #fff;
     }
 
     #headline-panasonic {
         background-color: #0056a8;
+        color: #fff;
     }
 
     #headline-album {
@@ -842,7 +899,7 @@
             text-align: center;
         }
 
-        .section-awards-right-portion svg {
+        .awards-right-portion svg {
             fill: #fff;
         }
     }
