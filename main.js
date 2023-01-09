@@ -3,4 +3,4 @@ $(function () {
     $("header").load("/components/header.html");
     $("#contact").load("/components/social-media.html");
     $("footer").load("/components/footer.html");
-})
+})  
