@@ -5,6 +5,6 @@ $(function () {
     $("footer").load("/components/footer.html");
 })
 
-window.addEventListener("load", function () {
-    $('.splash-screen').hide();
-});
+// window.addEventListener("load", function () {
+//     $('.splash-screen').hide();
+// });
