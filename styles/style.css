@@ -326,8 +326,8 @@ footer {
     }
 
     .headline-mockup-formatter {
-        width: 15em;
-        height: 20em;
+        width: 20vw;
+        height: 60vh;
         position: relative;
         background-repeat: no-repeat;
         background-size: cover;
@@ -761,6 +761,16 @@ footer {
         margin-bottom: 5vh;
     }
 
+    #section-more-trigger {
+        position: relative;
+        text-align: center;
+        padding: 2em;
+    }
+
+    #section-more-trigger:hover {
+        background-color: #0000004e;
+    }
+
     #header-menu {
         text-align: center;
     }
@@ -933,7 +943,7 @@ footer {
         /* background: linear-gradient(to bottom, #548aff, #2f71ff); */
     }
 
-    #headline-ywaste-mockup-1:hover {
+    /* #headline-ywaste-mockup-1:hover {
         background-image: url("/img/headline/ywaste/browsefilter.gif");
     }
 
@@ -971,7 +981,7 @@ footer {
 
     #headline-mpd-mockup-3:hover {
         background-image: url("/img/headline/mpd/settings.gif");
-    }
+    } */
 
     #section-motiongraphics li:hover {
         width: 80%;

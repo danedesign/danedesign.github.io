@@ -4,6 +4,12 @@ $(document).ready(function () {
         $("#header-menu-mobile").slideToggle();
     })
 
+    $('#section-more').hide();
+    $('#section-more-trigger').click(function() {
+        $("#section-more").fadeToggle();
+        $('#section-more-trigger').hide();
+    })    
+
     $("a#lang-change").click(function () {
         $('[lang="en"]').toggle();
         $('[lang="zh"]').toggle();
