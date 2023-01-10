@@ -536,10 +536,10 @@ footer {
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        animation-name: open;
+        /* animation-name: open;
         animation-duration: 1s;
         animation-delay: 2s;
-        animation-fill-mode: forwards;
+        animation-fill-mode: forwards; */
         z-index: 10000000000000000;
         backdrop-filter: blur(50px);
         -webkit-backdrop-filter: blur(50px);
