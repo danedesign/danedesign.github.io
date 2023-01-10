@@ -10,7 +10,7 @@ window.addEventListener("load", function () {
     $('.splash-screen').hide();
 });
 
-const images = document.querySelectorAll("[data-src]");
+const images = document.querySelectorAll("#headline-ywaste");
 
 function preloadImage(img) {
     const src = img.getElementbyId('headline-ywaste');
