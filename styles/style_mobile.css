@@ -9,11 +9,11 @@
     }
 
     #viewport {
-        padding: 1em 7vw;
+        padding: 1em 5vw;
     }
 
     #section-awards {
-        padding: 1em 7vw;
+        padding: 1em 5vw;
     }
 
     .mediascreen-mobile-tablet {
@@ -38,14 +38,6 @@
 @media screen and (max-width:1366px) {
     body {
         -webkit-user-select: none;
-    }
-
-    #viewport {
-        padding: 1em 6vw;
-    }
-
-    #section-awards {
-        padding: 1em 6vw;
     }
 
     .mediascreen-mobile-tablet {
@@ -75,14 +67,6 @@
 
     body {
         -webkit-user-select: none;
-    }
-
-    #viewport {
-        padding: 1em 7vw;
-    }
-
-    #section-awards {
-        padding: 1em 7vw;
     }
 
     .mediascreen-mobile-tablet {
