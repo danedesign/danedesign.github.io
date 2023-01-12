@@ -42,7 +42,6 @@ $(document).ready(function () {
         $('.awards-left-portion').css('color', '#fff');
         $('.awards-pull-text').css('color', 'rgba(255, 255, 255, 0)');
         $('.awards-right-portion, .awards-left-portion').css('opacity', '0');
-        // $('header').css('background', 'none');
         // $("#section-awards").css('padding-bottom', '+50px');
         $(".awards-showreel-vid-desktop, .awards-close-btn").fadeIn("slow");
         $(".awards-showreel-vid-desktop").trigger('play');
