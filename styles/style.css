@@ -136,6 +136,21 @@ footer {
         opacity: 0.5;
     }
 
+    .header-gallery-active {
+        color:#CA2E55;
+        font-weight: bolder;
+    }
+
+    .header-media-active {
+        color:#F39B6D;
+        font-weight: bolder;
+    }
+
+    .header-about-active {
+        color:#09BC8A;
+        font-weight: bolder;
+    }
+
     .section-divider {
         margin: 40px 0;
         display: grid;

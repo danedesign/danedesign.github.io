@@ -2,18 +2,18 @@ $(document).ready(function () {
     $("#header-menu-mobile").hide();
     $("#header-menu-toggle-btn").click(function () {
         $("#header-menu-mobile").slideToggle();
-    })
+    });
 
     $('#section-more').hide();
-    $('#section-more-trigger').click(function() {
+    $('#section-more-trigger').click(function () {
         $("#section-more").fadeToggle();
         $('#section-more-trigger').hide();
-    })
+    });
 
     $("a#lang-change").click(function () {
         $('[lang="en"]').toggle();
         $('[lang="zh"]').toggle();
-    })
+    });
 
     if (navigator.language.includes('zh'))
         $('[lang="en"]').hide();
@@ -35,7 +35,7 @@ $(document).ready(function () {
         function () {
             $('.awards-pull-text').fadeToggle();
         }
-    )
+    );
 
     $("a.awards-show-btn").click(function () {
         $("#section-awards").css('padding-top', '35%');
@@ -45,7 +45,7 @@ $(document).ready(function () {
         // $("#section-awards").css('padding-bottom', '+50px');
         $(".awards-showreel-vid-desktop, .awards-close-btn").fadeIn("slow");
         $(".awards-showreel-vid-desktop").trigger('play');
-    })
+    });
 
     $("iconify-icon.awards-close-btn").click(function () {
         $("#section-awards").css('padding-top', '');
@@ -55,7 +55,16 @@ $(document).ready(function () {
         // $("#section-awards").css('padding-bottom', '');
         $(".awards-showreel-vid-desktop, .awards-close-btn").fadeToggle("slow");
         $(".awards-showreel-vid-desktop").trigger('pause');
-    })
+    });
+
+    if (document.title.includes('Gallery'))
+    $('#header-gallery').addClass('header-gallery-active');
+
+    if (document.title.includes('Media'))
+    $('#header-media').addClass('header-media-active');
+
+    if (document.title.includes('About'))
+    $('#header-about').addClass('header-about-active');
 
     // if ($(window).width() <= 926) {
     //     $(".awards-mobile").show();
@@ -76,6 +85,7 @@ $(document).ready(function () {
     // })
 
 });
+
 
 let lang = navigator.language;
 console.log('browser language', lang);
