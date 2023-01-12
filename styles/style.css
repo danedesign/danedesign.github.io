@@ -523,10 +523,9 @@ footer {
     .detail-heading {
         display: grid;
         grid-template-columns: 7em auto;
-        grid-gap: 10vw;
-        padding: 2vw 5vw;
-        border: 1px black solid;
-        border-radius: 15px;
+        grid-gap: 15vw;
+        padding: 2vw 0;
+        border-bottom: 2px rgb(192, 192, 192) solid;
     }
 
     .detail-heading img {
@@ -860,7 +859,6 @@ footer {
         display: grid;
         grid-template-columns: auto auto auto auto auto;
         gap: 20px;
-        fill: #0074f8;
     }
 
     #section-bullet {
